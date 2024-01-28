@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piano Online</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="construction-message">
+        <p>Desculpe, o piano ainda não está disponível nesta configuração de tela. Estamos trabalhando para melhorar sua
+            experiência!</p>
+    </div>
+    <div aria-label="Orange and tan hamster running in a metal wheel" role="img" class="wheel-and-hamster">
+        <div class="wheel"></div>
+        <div class="hamster">
+            <div class="hamster__body">
+                <div class="hamster__head">
+                    <div class="hamster__ear"></div>
+                    <div class="hamster__eye"></div>
+                    <div class="hamster__nose"></div>
+                </div>
+                <div class="hamster__limb hamster__limb--fr"></div>
+                <div class="hamster__limb hamster__limb--fl"></div>
+                <div class="hamster__limb hamster__limb--br"></div>
+                <div class="hamster__limb hamster__limb--bl"></div>
+                <div class="hamster__tail"></div>
+            </div>
+        </div>
+        <div class="spoke"></div>
+    </div>
+    <div class="mapa-pai">
+        <div class="mapa-filho1">
+            NOTAS NATURAIS:<br>
+            <div>DÓ = E e Z</div>
+            <div>RÉ = R e X</div>
+            <div>MI = T e C</div>
+            <div>FÁ = V e I</div>
+            <div>SOL = B e O</div>
+            <div>LÁ = N e P</div>
+            <div>SI = M e ´</div>
+        </div>
+        <div class="mapa-filho1">
+            NOTAS SUSTENIDAS:<br>
+            <div>DÓ# = 4 e S</div>
+            <div>RÉ# = 5 e D</div>
+            <div>FÁ# = 9 e G</div>
+            <div>SOL# = 0 e H</div>
+            <div>LÁ# = - e J</div>
+        </div>
+    </div>
+    <button class="buttonSustain" id="toggleSustainBtn">SUSTAIN KEYBOARD</button>
+    <div class="container">
+        <div class="piano">
+            <div data-note="1" id="white-key-c" class="white-key"></div>
+            <div data-note="2" class="black-key"></div>
+            <div data-note="3" id="white-key-d" class="white-key"></div>
+            <div data-note="4" class="black-key-2"></div>
+            <div data-note="5" id="white-key-e" class="white-key-2"></div>
+            <div data-note="6" id="white-key-f" class="white-key"></div>
+            <div data-note="7" class="black-key"></div>
+            <div data-note="8" id="white-key-g" class="white-key"></div>
+            <div data-note="9" class="black-key"></div>
+            <div data-note="10" id="white-key-a" class="white-key"></div>
+            <div data-note="11" class="black-key-2"></div>
+            <div data-note="12" id="white-key-b" class="white-key-2"></div>
+            <div data-note="13" id="white-key-c" class="white-key"></div>
+            <div data-note="14" class="black-key"></div>
+            <div data-note="15" id="white-key-d" class="white-key"></div>
+            <div data-note="16" class="black-key-2"></div>
+            <div data-note="17" id="white-key-e" class="white-key-2"></div>
+            <div data-note="18" id="white-key-f" class="white-key"></div>
+            <div data-note="19" class="black-key"></div>
+            <div data-note="20" id="white-key-g" class="white-key"></div>
+            <div data-note="21" class="black-key"></div>
+            <div data-note="22" id="white-key-a" class="white-key"></div>
+            <div data-note="23" class="black-key-2"></div>
+            <div data-note="24" id="white-key-b" class="white-key-2"></div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="texto1">
+            Desenvolvido por Arthur Vinícius
+        </div>
+        <div class="social-links">
+            <a href="https://about.me/arthurviniciusf/" target="_blank">
+                <i id="icone-footer-4" class="fa fa-user-circle-o" aria-hidden="true"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/arthurfmacedo" target="_blank">
+                <i id="icone-footer-1" class="fa fa-linkedin-square" aria-hidden="true"></i>
+            </a>
+            <a href="https://www.github.com/arthurvinice" target="_blank">
+                <i id="icone-footer-2" class="fa fa-github-square" aria-hidden="true"></i>
+            </a>
+            <a href="https://www.instagram.com/arthurvinice" target="_blank">
+                <i id="icone-footer-3" class="fa fa-instagram" aria-hidden="true"></i>
+            </a>
+        </div>
+    </footer>
+    
+    <script src="script.js" defer></script>
+    <script src="https://kit.fontawesome.com/f93a1711f2.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
