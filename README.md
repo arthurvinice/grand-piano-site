@@ -6,5 +6,5 @@ Tecnologias usadas: || Technologies used:
 * Javascript
 
 
-Este site está funcionando no domínio: https://little-grand-piano.glitch.me/
+Este site está funcionando no domínio: https://little-grand-piano.glitch.me/ ||
 This website is working on the domain: https://little-grand-piano.glitch.me/
