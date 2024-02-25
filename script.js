@@ -203,7 +203,7 @@ let sustainEnabled = false;
 // EVENTO PARA TOGGLE DO SUSTAIN
 document.getElementById('toggleSustainBtn').addEventListener('click', function () {
     sustainEnabled = !sustainEnabled; // Inverte o estado do sustain
-    const sustainBtnText = sustainEnabled ? 'SUSTAIN KEYBOARD ON' : 'SUSTAIN KEYBOARD OFF';
+    const sustainBtnText = sustainEnabled ? 'SUSTAIN ON':'SUSTAIN';
     this.innerText = sustainBtnText;
 
     if (!sustainEnabled) {
@@ -267,6 +267,13 @@ function playNoteStart(note) {
                 }
             }, delayAfterPlay);
         }
+    } else if (sustainEnabled && pressedKeys[note]) {
+        const currentAudio = pressedKeys[note];
+        currentAudio.pause();
+        currentAudio.currentTime = 0;
+        const newAudio = new Audio(audioUrls[note]);
+        newAudio.play();
+        pressedKeys[note] = newAudio;
     }
 }
 
